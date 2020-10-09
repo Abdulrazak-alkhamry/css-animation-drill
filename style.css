@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+#stage{
+    margin: 0 auto;
+    height: 600px;
+    width: 600px;
+    
+}
+
+#hero{
+    margin-top:20px;
+    margin-left:20px;
+    position: relative;
+    height: 75px;
+    width: 75px;
+    border: 1px dashed red;
+    animation:  5s first-anim 0s forwards, 2s second-anim 5s forwards,  0.5s third-anim 7s forwards, 2s fourth-anim 9.5s forwards, 5s last 11.5s ease-in-out forwards; 
+   
+   
+}
+
+  @keyframes first-anim {
+   0% { left:0px; top:20px;}
+    100% { left:480px; top:20px;}
+  }
+
+  @keyframes second-anim {
+    0% { left:480px; top:20px;}
+    100% { left:480px; top:200px;}
+  }
+
+  @keyframes third-anim {
+    from { left:480px; top:200px; transform: rotate(0deg);}
+    to { left:250px; top:200px; transform: rotate(45deg);}
+  }
+
+  @keyframes fourth-anim {
+    from { left:250px; top:200px; transform: rotate(45deg);}
+    to { left:0px; top:205px; transform: rotate(90deg);}
+  }
+
+  @keyframes last-anim {
+    from { left:0px; top:20px;}
+    to { left:480px; top:20px;}
+
+  }
+   @keyframes last {
+        from {
+          top: 205px;
+          left: 20px;
+          background-color: white;
+          background: radial-gradient(transparent, transparent);
+          width: 75px;
+          height: 75px;
+          border-radius: none;
+          border: 1px dashed blue;
+        }
+        10%{
+              border:none;
+        }
+        50% {
+          background-color: #F76B1C;
+        }
+        60% {
+          background: radial-gradient(#F77B1A, #F76B1C);
+        }
+        70% {
+          background: radial-gradient(#F78B28, #F76B1C);
+        }
+        80% {
+          background: radial-gradient(#F79B36, #F76B1C);
+        }
+        90% {
+          background: radial-gradient(#F8BB44, #F76B1C);
+        }
+        to {
+          top: 442px;
+          left: 425px;
+          background-color: transparent;
+          background: radial-gradient(#FBDA61, #F76B1C);
+          width: 150px;
+          height: 150px;
+          border-radius: 150px;
+          border: none;
+        }
+      }
