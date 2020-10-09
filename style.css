@@ -34,22 +34,22 @@
   }
 
   @keyframes third-anim {
-    from { left:480px; top:200px; transform: rotate(0deg);}
-    to { left:250px; top:200px; transform: rotate(45deg);}
+    0% { left:480px; top:200px; transform: rotate(0deg);}
+    100% { left:250px; top:200px; transform: rotate(45deg);}
   }
 
   @keyframes fourth-anim {
-    from { left:250px; top:200px; transform: rotate(45deg);}
-    to { left:0px; top:205px; transform: rotate(90deg);}
+    0% { left:250px; top:200px; transform: rotate(45deg);}
+    100% { left:0px; top:205px; transform: rotate(90deg);}
   }
 
   @keyframes last-anim {
-    from { left:0px; top:20px;}
-    to { left:480px; top:20px;}
+    0% { left:0px; top:20px;}
+    100% { left:480px; top:20px;}
 
   }
    @keyframes last {
-        from {
+       0% {
           top: 205px;
           left: 20px;
           background-color: white;
@@ -77,7 +77,7 @@
         90% {
           background: radial-gradient(#F8BB44, #F76B1C);
         }
-        to {
+        100% {
           top: 442px;
           left: 425px;
           background-color: transparent;
